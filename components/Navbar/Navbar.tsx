@@ -1,7 +1,7 @@
 import type { NextComponentType } from 'next'
-import styles from './Header.module.css'
+import styles from './Navbar.module.css'
 
-const Header: NextComponentType = () => {
+const Navbar: NextComponentType = () => {
   return (
     <nav className={styles.navbar}>
       Navbar
@@ -9,4 +9,4 @@ const Header: NextComponentType = () => {
   )
 }
 
-export default Header
+export default Navbar
