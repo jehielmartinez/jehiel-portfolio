@@ -1,3 +1,25 @@
 .navbar {
-    background-color: blue;
+    background-color: var(--main-bg-color);
+    max-height: 95px;
+    min-height: 45px;
+    height: 6vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.navbarElement {
+    margin: 5px;
+    color: var(--text-color);
+    font-size: 20px;
+}
+
+.navbarElement:hover {
+    color: var(--highlight-text-color);
+}
+
+@media only screen and (max-width: 600px) {
+    .navbarElement {
+        font-size: 16px;
+    }  
 }

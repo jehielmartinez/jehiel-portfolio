@@ -1,9 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed&display=swap');
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: 'IBM Plex Sans Condensed', sans-serif;
 }
 
 a {
@@ -13,4 +13,10 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+:root {
+  --main-bg-color: #0F243F;
+  --text-color: #FFFFFF;
+  --highlight-text-color: #73BEFC;
 }

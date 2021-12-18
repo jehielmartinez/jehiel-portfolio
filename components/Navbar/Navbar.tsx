@@ -1,10 +1,23 @@
-import type { NextComponentType } from 'next'
+import Link from 'next/link'
 import styles from './Navbar.module.css'
 
-const Navbar: NextComponentType = () => {
+interface NavbarElement {
+  content: string
+  linkTo: string
+}
+
+interface NavbarProps {
+  elements: NavbarElement[];
+}
+
+const Navbar = ({ elements }: NavbarProps) => {
   return (
-    <nav className={styles.navbar}>
-      Navbar
+    <nav data-testid='navbar' className={styles.navbar}>
+      {elements.map((el: NavbarElement) => (
+        <Link href={el.linkTo}>
+          <a data-testid='navbar-element' className={styles.navbarElement}>{el.content}</a>
+        </Link>
+      ))}
     </nav>
   )
 }

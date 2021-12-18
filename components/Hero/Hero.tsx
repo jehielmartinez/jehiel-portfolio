@@ -3,7 +3,7 @@ import styles from './Hero.module.css'
 
 const Hero: NextComponentType = () => {
   return (
-    <div className={styles.hero}>
+    <div id='webinars' className={styles.hero}>
       Hero
     </div>
   )

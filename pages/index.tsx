@@ -4,6 +4,7 @@ import Footer from '../components/Footer/Footer'
 import Navbar from '../components/Navbar/Navbar'
 import Hero from '../components/Hero/Hero'
 import styles from '../styles/Home.module.css'
+import { navElements } from '../config'
 
 const Home: NextPage = () => {
   return (
@@ -13,7 +14,7 @@ const Home: NextPage = () => {
         <meta name="description" content="Jehiel Martinez Portfolio" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Navbar />
+      <Navbar elements={navElements}/>
       <main className={styles.main}>
         <Hero />
       </main>
