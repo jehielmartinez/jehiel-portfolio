@@ -15,7 +15,7 @@ const Hero = ({ social }: HeroProps) => {
   return (
     <section data-testid="hero" className={styles.hero}>
       <h1 data-testid="hero-title" className={styles.title}>
-        Hello, I'm <span className={styles.name}>Jehiel Martinez</span>
+        Hello, I&apos;m <span className={styles.name}>Jehiel Martinez</span>
       </h1>
       <h2 data-testid="hero-subtitle" className={styles.title}>
         I am an Electrical and Software Engineer
@@ -26,6 +26,7 @@ const Hero = ({ social }: HeroProps) => {
           <a
             data-testid="hero-social-element"
             target="_blank"
+            rel="noreferrer"
             key={el.alt}
             href={el.url}
             className={styles.link}

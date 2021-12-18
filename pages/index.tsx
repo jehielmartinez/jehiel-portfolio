@@ -10,7 +10,7 @@ const Home: NextPage = () => {
     <>
       <Head>
         <title>Jehiel Martinez</title>
-        <meta name="description" content="Jehiel Martinez Portfolio" />
+        <meta name="description" content="Jehiel Martinez" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navbar elements={navElements} />
