@@ -1,11 +1,32 @@
-import type { NextComponentType } from 'next'
+import Image from 'next/image'
 import styles from './Hero.module.css'
 
-const Hero: NextComponentType = () => {
+interface SocialImage {
+  src: string
+  alt: string
+  url: string
+}
+
+interface HeroProps {
+  social: SocialImage[]
+}
+
+const Hero = ({ social }: HeroProps) => {
   return (
-    <div id='webinars' className={styles.hero}>
-      Hero
-    </div>
+    <section className={styles.hero}>
+      <h1 className={styles.title}>
+        Hello, I'm <span className={styles.name}>Jehiel Martinez</span>
+      </h1>
+      <h2 className={styles.title}>I am an Electrical and Software Engineer</h2>
+
+      <div className={styles.social}>
+        {social.map((el) => (
+          <a target='_blank' key={el.alt} href={el.url} className={styles.link}>
+            <Image alt={el.alt} src={el.src} height={50} width={50} />
+          </a>
+        ))}
+      </div>
+    </section>
   )
 }
 

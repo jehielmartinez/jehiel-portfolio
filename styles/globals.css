@@ -1,9 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mukta&display=swap');
 html,
 body {
   padding: 0;
   margin: 0;
   font-family: 'IBM Plex Sans Condensed', sans-serif;
+  height: 100%;
 }
 
 a {
@@ -17,6 +19,12 @@ a {
 
 :root {
   --main-bg-color: #0F243F;
+  --secondary-bg-color: #0B1B2F;
   --text-color: #FFFFFF;
   --highlight-text-color: #73BEFC;
+}
+
+h1 {
+  margin: 0;
+  padding: 0;
 }

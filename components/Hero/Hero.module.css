@@ -1,0 +1,55 @@
+.hero {
+  height: 100vh;
+  background-color: var(--secondary-bg-color);
+  background-image: url(../../public//svg/hero-circuits.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+}
+
+.hero .title {
+  font-family: 'Mukta', sans-serif;
+  font-size: 60px;
+  color: var(--text-color);
+  text-align: center;
+  line-height: 1;
+}
+
+.title .name {
+  color: var(--highlight-text-color);
+}
+
+.hero .social {
+  justify-content: space-between;
+  flex-direction: column;
+  position: absolute;
+  display: flex;
+  left: 0;
+  bottom: 0;
+  height: 220px;
+  margin: 0px 2%;
+}
+
+.social .link {
+  height: 50px;
+  width: 50px;
+}
+
+@media only screen and (max-width: 600px) {
+  .hero .title {
+    font-size: 30px;
+  }
+
+  .social .link {
+    height: 30px;
+    width: 30px;
+  }
+
+  .hero .social {
+    height: 130px;
+  }
+}

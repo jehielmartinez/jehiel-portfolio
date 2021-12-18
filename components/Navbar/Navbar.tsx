@@ -14,7 +14,7 @@ const Navbar = ({ elements }: NavbarProps) => {
   return (
     <nav data-testid='navbar' className={styles.navbar}>
       {elements.map((el: NavbarElement) => (
-        <Link href={el.linkTo}>
+        <Link key={el.content} href={el.linkTo}>
           <a data-testid='navbar-element' className={styles.navbarElement}>{el.content}</a>
         </Link>
       ))}
