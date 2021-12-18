@@ -13,15 +13,23 @@ interface HeroProps {
 
 const Hero = ({ social }: HeroProps) => {
   return (
-    <section className={styles.hero}>
-      <h1 className={styles.title}>
+    <section data-testid="hero" className={styles.hero}>
+      <h1 data-testid="hero-title" className={styles.title}>
         Hello, I'm <span className={styles.name}>Jehiel Martinez</span>
       </h1>
-      <h2 className={styles.title}>I am an Electrical and Software Engineer</h2>
+      <h2 data-testid="hero-subtitle" className={styles.title}>
+        I am an Electrical and Software Engineer
+      </h2>
 
-      <div className={styles.social}>
+      <div data-testid="hero-social" className={styles.social}>
         {social.map((el) => (
-          <a target='_blank' key={el.alt} href={el.url} className={styles.link}>
+          <a
+            data-testid="hero-social-element"
+            target="_blank"
+            key={el.alt}
+            href={el.url}
+            className={styles.link}
+          >
             <Image alt={el.alt} src={el.src} height={50} width={50} />
           </a>
         ))}
